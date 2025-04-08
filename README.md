@@ -1,87 +1,47 @@
-# Welcome to React Router!
+# Building the Pokedex MVP!
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Welcome to the team! We're thrilled to have you help build the Minimum Viable Product (MVP) for our new Pokedex application. This document outlines the initial phases of development.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+We'll be using React, React Router, TypeScript, and Tailwind CSS for this project. Let's build something great!
 
 ## Getting Started
 
-### Installation
+### 1. Installation
 
-Install the dependencies:
+Clone the repository and install the necessary dependencies:
 
 ```bash
 npm install
 ```
 
-### Development
+### 2. Development Environment
 
-Start the development server with HMR:
+Start the local development server:
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+Your development environment will be running at `http://localhost:5173`.
 
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+**Note:** You might find useful helper functions for interacting with the PokeAPI in the `src/services` directory.
 
 ---
 
-Built with ❤️ using React Router.
+## Development Phases
+
+We'll build the MVP in phases, starting simple and adding complexity incrementally.
+
+### Phase 1: Displaying the Pokemon List
+
+**Goal:** Fetch and display the first batch of Pokemon.
+
+1.  **Fetch Initial Data:** When the application loads, fetch the list of Pokemon from `https://pokeapi.co/api/v2/pokemon`. You can use the `getPokemon()` function in `src/services/get-pokemon.ts` to fetch the data.
+2.  **Create `<PokedexMenu />`:** Build a component that takes the fetched Pokemon list (`results` array) and displays the names.
+
+### Phase 2: Viewing Pokemon Details
+
+**Goal:** Allow users to click on a Pokemon in the menu to see its details.
+
+1.  **Fetch Details:** When a Pokemon name in `<PokedexMenu />` is clicked, use the `url` provided for that Pokemon in the initial fetch to get its detailed data (e.g., `https://pokeapi.co/api/v2/pokemon/1/`). You can use the `getPokemonByUrl()` function in `src/services/get-pokemon-by-url.ts` to fetch the data.
+2.  **Create `<PokemonDisplay />`:** Build a reusable component to show the details.
