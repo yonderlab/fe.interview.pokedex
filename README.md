@@ -44,4 +44,4 @@ We'll build the MVP in phases, starting simple and adding complexity incremental
 **Goal:** Allow users to click on a Pokemon in the menu to see its details.
 
 1.  **Fetch Details:** When a Pokemon name in `<PokedexMenu />` is clicked, use the `url` provided for that Pokemon in the initial fetch to get its detailed data (e.g., `https://pokeapi.co/api/v2/pokemon/1/`). You can use the `getPokemonByUrl()` function in `src/services/get-pokemon-by-url.ts` to fetch the data.
-2.  **Create `<PokemonDisplay />`:** Build a reusable component to show the details.
+2.  **Create `<PokemonDisplay />`:** Build a reusable component to show the Pokemons name, image, and the array of types.
