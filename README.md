@@ -36,12 +36,12 @@ We'll build the MVP in phases, starting simple and adding complexity incremental
 
 **Goal:** Fetch and display the first batch of Pokemon.
 
-1.  **Fetch Initial Data:** When the application loads, fetch the list of Pokemon from `https://pokeapi.co/api/v2/pokemon`. You can use the `getPokemon()` function in `src/services/get-pokemon.ts` to fetch the data.
-2.  **Create `<PokedexMenu />`:** Build a component that takes the fetched Pokemon list (`results` array) and displays the names.
+1.  **Fetch Initial Data:** When the application loads, fetch the list of Pokemon from `https://pokeapi.co/api/v2/pokemon`. You can use the `getPokemon()` function in `app/services/get-pokemon.ts` to fetch the data.
+2.  **Create `<PokedexList />`:** Build a component that takes the fetched Pokemon list (`results` array) and displays the names.
 
 ### Phase 2: Viewing Pokemon Details
 
 **Goal:** Allow users to click on a Pokemon in the menu to see its details.
 
-1.  **Fetch Details:** When a Pokemon name in `<PokedexMenu />` is clicked, use the `url` provided for that Pokemon in the initial fetch to get its detailed data (e.g., `https://pokeapi.co/api/v2/pokemon/1/`). You can use the `getPokemonByUrl()` function in `src/services/get-pokemon-by-url.ts` to fetch the data.
+1.  **Fetch Details:** When a Pokemon name in `<PokedexMenu />` is clicked, use the `url` provided for that Pokemon in the initial fetch to get its detailed data (e.g., `https://pokeapi.co/api/v2/pokemon/1/`). You can use the `getPokemonByUrl()` function in `app/services/get-pokemon-by-url.ts` to fetch the data.
 2.  **Create `<PokemonDisplay />`:** Build a reusable component to show the Pokemons name, image, and the array of types.
