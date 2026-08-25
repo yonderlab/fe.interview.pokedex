@@ -1,56 +1,55 @@
-# Building the Pokedex!
+# Pokemon Team Builder
 
-Welcome to the team! We're thrilled to have you help shape and build our new Pokedex application. This repository provides a starting point; the product direction is yours to define.
+Welcome to the team! Your challenge is to shape and build a web app that helps people create Pokemon teams and understand what those teams are capable of.
 
-We'll be using React, React Router, TypeScript, and Tailwind CSS for this project. Let's build something great!
+This repository is a starting point, not a specification. We care about the product decisions you make as much as the code you write.
 
-## Getting Started
+## The Product Challenge
 
-### 1. Installation
+A successful experience should let someone:
 
-Clone the repository and install the necessary dependencies:
+- Find and select Pokemon for a team.
+- Create and manage multiple distinct teams over time.
+- Add and remove team members while understanding the effect of each change.
+- Understand a team's combined base stats, including HP, attack, defense, special attack, special defense, and speed.
+- See which Pokemon types are represented across the team.
+
+A team should feel like more than a list of names. Beyond these core outcomes, decide which strengths, gaps, or patterns would be useful to surface.
+
+How you turn the outcomes into a useful product is up to you. Decide what information matters, how people move through the experience, and which problems deserve the most attention.
+
+## Product Considerations
+
+These are questions to consider, not a feature checklist:
+
+- How does someone find the right Pokemon without the experience feeling like a catalog?
+- How do they create, identify, switch between, and update their teams?
+- How should team-level stats and type composition be presented so they are meaningful rather than just numbers?
+- What feedback helps someone understand the effect of adding or removing a Pokemon?
+- What should happen when a team is empty, incomplete, unusually large, or contains the same Pokemon more than once?
+- Which choices should persist when someone returns?
+- What details make the experience feel responsive, accessible, and complete?
+
+Make reasonable assumptions and prioritize. You are welcome to improve the interface, information architecture, data model, and technical foundations wherever they support your product direction.
+
+## Technical Starting Point
+
+The project uses React, React Router, TypeScript, and Tailwind CSS. It includes helper functions for interacting with the PokeAPI in `app/services`.
+
+Install the dependencies and start the local development server:
 
 ```bash
 npm install
-```
-
-### 2. Development Environment
-
-Start the local development server:
-
-```bash
 npm run dev
 ```
 
-Your development environment will be running at `http://localhost:5173`.
+The app will be available at `http://localhost:5173`.
 
-**Note:** You might find useful helper functions for interacting with the PokeAPI in the `app/services` directory.
-
----
-
-## Product Brief
-
-Build a Pokedex that helps people discover Pokemon, learn more about them, and return to the ones they care about.
-
-You own the product and engineering decisions. There is no required feature list or prescribed order of implementation. Decide what a useful product experience looks like, prioritize the work that creates the most value, and deliver a coherent result.
-
-### Product Opportunities
-
-The ideas below are suggestions, not a checklist:
-
-- Make browsing a large catalog feel clear and approachable.
-- Help users understand what makes an individual Pokemon interesting.
-- Support people who arrive with a specific Pokemon or characteristic in mind.
-- Give returning users a reason to come back, such as saved preferences or recent activity.
-- Consider the full experience around loading, empty, and error states.
-- Make the product work well across devices and for people using assistive technology.
-
-Feel free to improve the interface, information architecture, and technical foundations wherever that supports your product direction. The existing PokeAPI helpers are available as a starting point, but how you use them is up to you.
-
-### Share Your Thinking
+## Share Your Thinking
 
 When you finish, briefly explain:
 
-- What you chose to build and why.
-- The tradeoffs or assumptions you made.
+- The user needs you prioritized and why.
+- The product and technical decisions you made.
+- The assumptions and tradeoffs that shaped the result.
 - What you would explore next with more time or user feedback.
