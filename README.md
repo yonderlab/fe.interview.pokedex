@@ -1,6 +1,6 @@
-# Building the Pokedex MVP!
+# Building the Pokedex!
 
-Welcome to the team! We're thrilled to have you help shape and build the Minimum Viable Product (MVP) for our new Pokedex application. This repository provides a starting point; the product direction is yours to define.
+Welcome to the team! We're thrilled to have you help shape and build our new Pokedex application. This repository provides a starting point; the product direction is yours to define.
 
 We'll be using React, React Router, TypeScript, and Tailwind CSS for this project. Let's build something great!
 
@@ -32,7 +32,7 @@ Your development environment will be running at `http://localhost:5173`.
 
 Build a Pokedex that helps people discover Pokemon, learn more about them, and return to the ones they care about.
 
-You own the product and engineering decisions. There is no required feature list or prescribed order of implementation. Decide what a useful MVP looks like, prioritize the work that creates the most value, and deliver a coherent experience.
+You own the product and engineering decisions. There is no required feature list or prescribed order of implementation. Decide what a useful product experience looks like, prioritize the work that creates the most value, and deliver a coherent result.
 
 ### Product Opportunities
 
