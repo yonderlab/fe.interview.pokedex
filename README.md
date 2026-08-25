@@ -45,6 +45,14 @@ npm run dev
 
 The app will be available at `http://localhost:5173`.
 
+## How You Work
+
+Use whatever workflow and tools help you do your best work. AI tools are explicitly welcome, as are documentation, libraries, and any other resources you would normally use.
+
+We are not testing whether you can do everything from memory or without assistance. Choose approaches because they help solve the product problem, not because you think they will impress us.
+
+The goal is to understand how you work: how you frame ambiguity, prioritize, use tools, evaluate their output, validate the result, and communicate your decisions. Whatever workflow you choose, you should be able to explain it and stand behind the finished product.
+
 ## Share Your Thinking
 
 When you finish, briefly explain:
@@ -52,4 +60,5 @@ When you finish, briefly explain:
 - The user needs you prioritized and why.
 - The product and technical decisions you made.
 - The assumptions and tradeoffs that shaped the result.
+- How your workflow and tools, including AI where relevant, supported your work.
 - What you would explore next with more time or user feedback.
