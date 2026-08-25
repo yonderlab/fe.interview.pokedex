@@ -24,7 +24,7 @@ npm run dev
 
 Your development environment will be running at `http://localhost:5173`.
 
-**Note:** You might find useful helper functions for interacting with the PokeAPI in the `src/services` directory.
+**Note:** You might find useful helper functions for interacting with the PokeAPI in the `app/services` directory.
 
 ---
 
