@@ -1,6 +1,6 @@
 # Building the Pokedex MVP!
 
-Welcome to the team! We're thrilled to have you help build the Minimum Viable Product (MVP) for our new Pokedex application. This document outlines the initial phases of development.
+Welcome to the team! We're thrilled to have you help shape and build the Minimum Viable Product (MVP) for our new Pokedex application. This repository provides a starting point; the product direction is yours to define.
 
 We'll be using React, React Router, TypeScript, and Tailwind CSS for this project. Let's build something great!
 
@@ -28,35 +28,29 @@ Your development environment will be running at `http://localhost:5173`.
 
 ---
 
-## Development Phases
+## Product Brief
 
-We'll build the MVP in phases, starting simple and adding complexity incrementally.
+Build a Pokedex that helps people discover Pokemon, learn more about them, and return to the ones they care about.
 
-### Phase 1: Displaying the Pokemon List
+You own the product and engineering decisions. There is no required feature list or prescribed order of implementation. Decide what a useful MVP looks like, prioritize the work that creates the most value, and deliver a coherent experience.
 
-**Goal:** Fetch and display the first batch of Pokemon.
+### Product Opportunities
 
-1.  **Fetch Initial Data:** When the application loads, fetch the list of Pokemon from `https://pokeapi.co/api/v2/pokemon`. You can use the `getPokemon()` function in `app/services/get-pokemon.ts` to fetch the data.
-2.  **Create `<PokedexList />`:** Build a component that takes the fetched Pokemon list (`results` array) and displays the names.
+The ideas below are suggestions, not a checklist:
 
-### Phase 2: Viewing Pokemon Details
+- Make browsing a large catalog feel clear and approachable.
+- Help users understand what makes an individual Pokemon interesting.
+- Support people who arrive with a specific Pokemon or characteristic in mind.
+- Give returning users a reason to come back, such as saved preferences or recent activity.
+- Consider the full experience around loading, empty, and error states.
+- Make the product work well across devices and for people using assistive technology.
 
-**Goal:** Allow users to click on a Pokemon in the menu to see its details.
+Feel free to improve the interface, information architecture, and technical foundations wherever that supports your product direction. The existing PokeAPI helpers are available as a starting point, but how you use them is up to you.
 
-1.  **Fetch Details:** When a Pokemon name in `<PokedexMenu />` is clicked, use the `url` provided for that Pokemon in the initial fetch to get its detailed data (e.g., `https://pokeapi.co/api/v2/pokemon/1/`). You can use the `getPokemonByUrl()` function in `app/services/get-pokemon-by-url.ts` to fetch the data.
-2.  **Create `<PokemonDisplay />`:** Build a reusable component to show the Pokemons name, image, and the array of types.
+### Share Your Thinking
 
-### Phase 3: Pagination & Infinite Scroll
-**Goal:** Handle the full list of 1328 Pokemon efficiently.
+When you finish, briefly explain:
 
-1. Implement pagination using the ⁠next and ⁠previous URLs from the API
-
-### Phase 4: Search & Filter
-**Goal:** Help users find specific Pokemon quickly.
-
-1. Add real-time search by Pokemon name
-
-### Phase 5: Favorites & Local Storage
-**Goal:** Let users save their favorite Pokemon.
-
-1. Add a favorite button to each Pokemon
+- What you chose to build and why.
+- The tradeoffs or assumptions you made.
+- What you would explore next with more time or user feedback.
